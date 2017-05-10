@@ -49,44 +49,46 @@
       <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     </head>
     <body>
+
         <div id="container">
-            <div id="canvas">
-                <div id="nav">
-                    <h2 id="title">PACE LEE</h2>
-                      <ul id="toggle">
-                        <li>
-                            <div class="active border">
-                                <span class="menu-icons fa fa-home"></span><a href="#">HOME</a>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div>
-                                <span class="menu-icons  fa fa-user"></span><a href="#">ABOUT</a>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div>
-                                <span class="menu-icons  fa fa-briefcase"></span><a href="#">PORTFOLIO</a>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div>
-                                <span class="menu-icons  fa fa-envelope"></span><a href="#">CONTACT</a>
-                            </div>
-                        </li>
-                      </ul>
-                </div>
-
-                <a href="#" class="toggle-nav" id="bars"><i class="fa fa-bars"></i></a>
-                <br><br><br>
-                <%= yield %>
+          <div id="canvas">
+            <div id="nav">
+              <h2 id="title">PACE LEE</h2>
+              <ul id="toggle">
+                <li>
+                  <div>
+                    <a href="/"><span class="menu-icons fa fa-home"></span>HOME</a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <a href="/about"><span class="menu-icons  fa fa-user"></span>ABOUT</a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <a href="/portfolio"><span class="menu-icons  fa fa-briefcase"></span>PORTFOLIO</a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <a href="/contact"><span class="menu-icons  fa fa-envelope"></span>CONTACT</a>
+                  </div>
+                </li>
+              </ul>
             </div>
+          <a href="#" class="toggle-nav" id="bars"><i class="fa fa-bars"></i></a>
+          <br><br><br>
+          <%= yield %>
+          <div class="container">
+            <div class="row">
+              <i style="z-index: 3; float:right;" id="top" class="fa fa-hand-o-up" aria-hidden="true"></i>
+              <p style="float:right;">©2017 Pace Lee.</p>
+            </div>
+          </div>
         </div>
+      </div>
       <!-- Scripts -->
-      <link rel="javascript" href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'>
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
       <script src="custom.js"></script>
     </body>
